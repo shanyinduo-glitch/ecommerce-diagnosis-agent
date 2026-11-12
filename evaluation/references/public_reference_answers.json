@@ -1,0 +1,371 @@
+{
+  "case_01": {
+    "seed": 20262027,
+    "scenario_for_teacher": {
+      "kind": "traffic_drop",
+      "target_channel": "搜索"
+    },
+    "periods": {
+      "control": "2026-09-01~2026-09-14",
+      "analysis": "2026-09-15~2026-09-28"
+    },
+    "overall": {
+      "control": {
+        "net_sales": 1691292.44,
+        "order_count": 4466,
+        "aov": 378.7041,
+        "refund_rate": 0.025779
+      },
+      "analysis": {
+        "net_sales": 1538405.57,
+        "order_count": 3947,
+        "aov": 389.7658,
+        "refund_rate": 0.026698
+      },
+      "difference": -152886.87,
+      "change_rate": -0.090396
+    },
+    "top_decline_source": {
+      "channel": "搜索",
+      "category": "家居"
+    },
+    "by_channel": {
+      "App": {
+        "control_net_sales": 591002.89,
+        "analysis_net_sales": 583700.7,
+        "difference": -7302.19,
+        "decrease_amount": 7302.19
+      },
+      "搜索": {
+        "control_net_sales": 466340.76,
+        "analysis_net_sales": 279932.48,
+        "difference": -186408.28,
+        "decrease_amount": 186408.28
+      },
+      "网页": {
+        "control_net_sales": 386927.01,
+        "analysis_net_sales": 384630.68,
+        "difference": -2296.33,
+        "decrease_amount": 2296.33
+      },
+      "联盟": {
+        "control_net_sales": 247021.78,
+        "analysis_net_sales": 290141.71,
+        "difference": 43119.93,
+        "decrease_amount": -43119.93
+      }
+    },
+    "by_category": {
+      "家居": {
+        "control_net_sales": 313693.98,
+        "analysis_net_sales": 260975.4,
+        "difference": -52718.58,
+        "decrease_amount": 52718.58
+      },
+      "数码": {
+        "control_net_sales": 749256.87,
+        "analysis_net_sales": 726064.39,
+        "difference": -23192.48,
+        "decrease_amount": 23192.48
+      },
+      "服饰": {
+        "control_net_sales": 311278.96,
+        "analysis_net_sales": 268719.91,
+        "difference": -42559.05,
+        "decrease_amount": 42559.05
+      },
+      "未知": {
+        "control_net_sales": 1803.0,
+        "analysis_net_sales": 234.68,
+        "difference": -1568.32,
+        "decrease_amount": 1568.32
+      },
+      "美妆": {
+        "control_net_sales": 180915.19,
+        "analysis_net_sales": 171690.84,
+        "difference": -9224.35,
+        "decrease_amount": 9224.35
+      },
+      "食品": {
+        "control_net_sales": 134344.44,
+        "analysis_net_sales": 110720.35,
+        "difference": -23624.09,
+        "decrease_amount": 23624.09
+      }
+    },
+    "traffic_by_channel": {
+      "App": {
+        "control_visits": 20146,
+        "analysis_visits": 19816,
+        "difference": -330
+      },
+      "网页": {
+        "control_visits": 14399,
+        "analysis_visits": 14130,
+        "difference": -269
+      },
+      "搜索": {
+        "control_visits": 17160,
+        "analysis_visits": 9909,
+        "difference": -7251
+      },
+      "联盟": {
+        "control_visits": 11541,
+        "analysis_visits": 11418,
+        "difference": -123
+      }
+    },
+    "data_quality": {
+      "exact_duplicate_item_ids": 12,
+      "conflicting_item_ids_excluded": 4,
+      "unmatched_product_rows": 8,
+      "clean_item_rows": 10236
+    }
+  },
+  "case_02": {
+    "seed": 20263036,
+    "scenario_for_teacher": {
+      "kind": "refund_spike",
+      "target_category": "数码"
+    },
+    "periods": {
+      "control": "2026-09-01~2026-09-14",
+      "analysis": "2026-09-15~2026-09-28"
+    },
+    "overall": {
+      "control": {
+        "net_sales": 1615189.75,
+        "order_count": 4474,
+        "aov": 361.0169,
+        "refund_rate": 0.027304
+      },
+      "analysis": {
+        "net_sales": 1382747.63,
+        "order_count": 4320,
+        "aov": 320.0805,
+        "refund_rate": 0.177744
+      },
+      "difference": -232442.12,
+      "change_rate": -0.14391
+    },
+    "top_decline_source": {
+      "channel": "App",
+      "category": "数码"
+    },
+    "by_channel": {
+      "App": {
+        "control_net_sales": 583224.92,
+        "analysis_net_sales": 458580.82,
+        "difference": -124644.1,
+        "decrease_amount": 124644.1
+      },
+      "搜索": {
+        "control_net_sales": 426673.57,
+        "analysis_net_sales": 379436.05,
+        "difference": -47237.52,
+        "decrease_amount": 47237.52
+      },
+      "网页": {
+        "control_net_sales": 354591.63,
+        "analysis_net_sales": 326898.09,
+        "difference": -27693.54,
+        "decrease_amount": 27693.54
+      },
+      "联盟": {
+        "control_net_sales": 250699.63,
+        "analysis_net_sales": 217832.67,
+        "difference": -32866.96,
+        "decrease_amount": 32866.96
+      }
+    },
+    "by_category": {
+      "家居": {
+        "control_net_sales": 352595.68,
+        "analysis_net_sales": 365474.42,
+        "difference": 12878.74,
+        "decrease_amount": -12878.74
+      },
+      "数码": {
+        "control_net_sales": 631553.47,
+        "analysis_net_sales": 425483.6,
+        "difference": -206069.87,
+        "decrease_amount": 206069.87
+      },
+      "服饰": {
+        "control_net_sales": 350397.49,
+        "analysis_net_sales": 338275.68,
+        "difference": -12121.81,
+        "decrease_amount": 12121.81
+      },
+      "未知": {
+        "control_net_sales": 972.84,
+        "analysis_net_sales": 1910.24,
+        "difference": 937.4,
+        "decrease_amount": -937.4
+      },
+      "美妆": {
+        "control_net_sales": 182392.62,
+        "analysis_net_sales": 165692.48,
+        "difference": -16700.14,
+        "decrease_amount": 16700.14
+      },
+      "食品": {
+        "control_net_sales": 97277.65,
+        "analysis_net_sales": 85911.21,
+        "difference": -11366.44,
+        "decrease_amount": 11366.44
+      }
+    },
+    "traffic_by_channel": {
+      "App": {
+        "control_visits": 20012,
+        "analysis_visits": 19968,
+        "difference": -44
+      },
+      "网页": {
+        "control_visits": 14039,
+        "analysis_visits": 14322,
+        "difference": 283
+      },
+      "搜索": {
+        "control_visits": 17338,
+        "analysis_visits": 17086,
+        "difference": -252
+      },
+      "联盟": {
+        "control_visits": 11394,
+        "analysis_visits": 11260,
+        "difference": -134
+      }
+    },
+    "data_quality": {
+      "exact_duplicate_item_ids": 12,
+      "conflicting_item_ids_excluded": 4,
+      "unmatched_product_rows": 8,
+      "clean_item_rows": 10739
+    }
+  },
+  "case_03": {
+    "seed": 20264045,
+    "scenario_for_teacher": {
+      "kind": "aov_drop",
+      "target_category": "服饰"
+    },
+    "periods": {
+      "control": "2026-09-01~2026-09-14",
+      "analysis": "2026-09-15~2026-09-28"
+    },
+    "overall": {
+      "control": {
+        "net_sales": 1508379.99,
+        "order_count": 4438,
+        "aov": 339.8783,
+        "refund_rate": 0.027796
+      },
+      "analysis": {
+        "net_sales": 1355475.14,
+        "order_count": 4352,
+        "aov": 311.4603,
+        "refund_rate": 0.028247
+      },
+      "difference": -152904.85,
+      "change_rate": -0.10137
+    },
+    "top_decline_source": {
+      "channel": "App",
+      "category": "服饰"
+    },
+    "by_channel": {
+      "App": {
+        "control_net_sales": 525128.99,
+        "analysis_net_sales": 471114.4,
+        "difference": -54014.59,
+        "decrease_amount": 54014.59
+      },
+      "搜索": {
+        "control_net_sales": 402570.35,
+        "analysis_net_sales": 381279.85,
+        "difference": -21290.5,
+        "decrease_amount": 21290.5
+      },
+      "网页": {
+        "control_net_sales": 335401.61,
+        "analysis_net_sales": 296335.38,
+        "difference": -39066.23,
+        "decrease_amount": 39066.23
+      },
+      "联盟": {
+        "control_net_sales": 245279.04,
+        "analysis_net_sales": 206745.51,
+        "difference": -38533.53,
+        "decrease_amount": 38533.53
+      }
+    },
+    "by_category": {
+      "家居": {
+        "control_net_sales": 310784.8,
+        "analysis_net_sales": 290987.66,
+        "difference": -19797.14,
+        "decrease_amount": 19797.14
+      },
+      "数码": {
+        "control_net_sales": 659580.4,
+        "analysis_net_sales": 724386.18,
+        "difference": 64805.78,
+        "decrease_amount": -64805.78
+      },
+      "服饰": {
+        "control_net_sales": 258732.37,
+        "analysis_net_sales": 71296.43,
+        "difference": -187435.94,
+        "decrease_amount": 187435.94
+      },
+      "未知": {
+        "control_net_sales": 272.71,
+        "analysis_net_sales": 1020.37,
+        "difference": 747.66,
+        "decrease_amount": -747.66
+      },
+      "美妆": {
+        "control_net_sales": 165252.25,
+        "analysis_net_sales": 157540.81,
+        "difference": -7711.44,
+        "decrease_amount": 7711.44
+      },
+      "食品": {
+        "control_net_sales": 113757.46,
+        "analysis_net_sales": 110243.69,
+        "difference": -3513.77,
+        "decrease_amount": 3513.77
+      }
+    },
+    "traffic_by_channel": {
+      "App": {
+        "control_visits": 19953,
+        "analysis_visits": 19759,
+        "difference": -194
+      },
+      "网页": {
+        "control_visits": 14411,
+        "analysis_visits": 14113,
+        "difference": -298
+      },
+      "搜索": {
+        "control_visits": 17025,
+        "analysis_visits": 16742,
+        "difference": -283
+      },
+      "联盟": {
+        "control_visits": 11574,
+        "analysis_visits": 11438,
+        "difference": -136
+      }
+    },
+    "data_quality": {
+      "exact_duplicate_item_ids": 12,
+      "conflicting_item_ids_excluded": 4,
+      "unmatched_product_rows": 8,
+      "clean_item_rows": 10719
+    }
+  }
+}

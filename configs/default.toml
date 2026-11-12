@@ -1,0 +1,11 @@
+model = "qwen3.8-27b"
+base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+max_calls = 20
+timeout_seconds = 90
+max_seconds = 600
+max_tool_calls = 30
+max_errors = 6
+control_start = "2026-09-01"
+control_end = "2026-09-14"
+analysis_start = "2026-09-15"
+analysis_end = "2026-09-28"

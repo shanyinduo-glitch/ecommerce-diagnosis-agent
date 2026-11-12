@@ -1,0 +1,47 @@
+[
+  {
+    "path": "data\\raw\\public\\case_01\\order_items.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_01\\order_items.csv",
+    "sha256": "54e91d9c302a318186540aef797781f106eb53b5e6f1319f4df3b45b3d5f5514"
+  },
+  {
+    "path": "data\\raw\\public\\case_01\\products.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_01\\products.csv",
+    "sha256": "7f885099b46435cd56de9cf54ef65585c89a792ccbdaaa32a6c6e8bde06bd89d"
+  },
+  {
+    "path": "data\\raw\\public\\case_01\\traffic.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_01\\traffic.csv",
+    "sha256": "ee4696574ed56e6b8e1c449bfb422a02ef8e59f862f2bd2d6c0001f752462a00"
+  },
+  {
+    "path": "data\\raw\\public\\case_02\\order_items.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_02\\order_items.csv",
+    "sha256": "0ef874366c9a86de8bcf5150ad64f049ccb4a924b51c5060689a34238f8f8c00"
+  },
+  {
+    "path": "data\\raw\\public\\case_02\\products.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_02\\products.csv",
+    "sha256": "d6fa417ffef8e6dbec4e69780c3950a2c60616ef4bb806cbb30979fbec7af856"
+  },
+  {
+    "path": "data\\raw\\public\\case_02\\traffic.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_02\\traffic.csv",
+    "sha256": "b32e50635863146d5d82e607f86db29e9c2a5e8c8493f936b1c6c2e43e47f4bb"
+  },
+  {
+    "path": "data\\raw\\public\\case_03\\order_items.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_03\\order_items.csv",
+    "sha256": "af1602430a9b1fbc7f7cef57beefc5c7312c4afa75146f8f14f449bbe6e6455c"
+  },
+  {
+    "path": "data\\raw\\public\\case_03\\products.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_03\\products.csv",
+    "sha256": "094ddd491b93732c1a5f07d985c7d8f720c08b664619b66ddbdbc66851ab145c"
+  },
+  {
+    "path": "data\\raw\\public\\case_03\\traffic.csv",
+    "source": "课题二_资料与项目规划\\02_公开数据\\case_03\\traffic.csv",
+    "sha256": "89cdc0ef079a49bd8289bf3d3c4d17513208356ce69a171d5e6babb7739cb86f"
+  }
+]

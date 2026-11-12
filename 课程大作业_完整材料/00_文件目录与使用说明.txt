@@ -1,0 +1,46 @@
+课程大作业：电影推荐与数据分析
+完整材料文件目录
+
+一、压缩包目录结构
+
+课程大作业_完整材料/
+├── 00_文件目录与使用说明.txt
+├── 01_作业说明/
+│   ├── 课程大作业_电影推荐与数据分析.docx
+└── 02_学生附件/
+    ├── README_data_preparation.txt
+    ├── prepare_movielens.py
+    ├── generate_ecommerce_data.py
+    └── ecommerce_public_3_cases.zip
+
+共 6 个文件。
+
+二、各文件用途
+
+1. 00_文件目录与使用说明.txt
+   本文件。说明总包结构、各文件用途和建议使用顺序。
+
+2. 01_作业说明/课程大作业_电影推荐与数据分析.docx
+   可直接发给学生的正式 Word 版作业说明，包含两个题目、评分标准、提交要求、数据下载链接和数据生成命令。
+
+3. 02_学生附件/README_data_preparation.txt
+   数据准备快速指南，包含 Python 环境要求、MovieLens 官方地址、学生开发数据生成命令和电商数据生成命令。
+
+4. 02_学生附件/prepare_movielens.py
+   MovieLens 100K 数据准备脚本。可自动下载并校验官方数据，生成学生开发数据；教师也可用私有种子生成最终测试数据。
+
+5. 02_学生附件/generate_ecommerce_data.py
+   电商销售下降案例生成脚本。学生可生成公开案例，教师可使用私有种子生成隐藏测试案例。
+
+6. 02_学生附件/ecommerce_public_3_cases.zip
+   已生成的三组电商公开案例。选择题目二的学生可直接解压使用，不必先运行生成脚本。
+
+三、建议使用方式
+
+学生先阅读 01_作业说明中的 Word 文件，再根据所选题目查看 02_学生附件中的数据准备说明。
+
+选择题目一：运行 prepare_movielens.py。MovieLens 原始数据因使用条款限制，不直接打包，脚本会从 GroupLens 官方地址下载并在本机生成开发数据。
+
+选择题目二：直接解压 ecommerce_public_3_cases.zip，或运行 generate_ecommerce_data.py 重新生成公开案例。
+
+运行环境：Python 3.10 或更高版本。两个脚本仅使用 Python 标准库，无需 pip install。
