@@ -1,0 +1,93 @@
+{
+  "profile": {
+    "path": "data_profile.json",
+    "locator": "",
+    "sha256": "762bcc753b1c16fd8b7acc6bb3f499773899d5a6dfd704cd8b7e4fce7e79860f",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 2
+  },
+  "quality": {
+    "path": "quality_report.json",
+    "locator": "",
+    "sha256": "fb41aa2db337ba3f68ac972d02170caf30f2d525acad61157e5cc4c34481857b",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 3
+  },
+  "metrics": {
+    "path": "metrics.json",
+    "locator": "",
+    "sha256": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 4
+  },
+  "sql_001": {
+    "path": "queries/sql_001.json",
+    "locator": "rows",
+    "sha256": "52bdb5e0b6398816c71c4b4bad39e0c6d2d49fe6f667581ff62f30434113e9d3",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 5
+  },
+  "sql_002": {
+    "path": "queries/sql_002.json",
+    "locator": "rows",
+    "sha256": "679da230ef747f455d5ae8acaca1df712d113a4fa217644f089e2615dbead75d",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 6
+  },
+  "sql_003": {
+    "path": "queries/sql_003.json",
+    "locator": "rows",
+    "sha256": "50295467e7bddef893e7a17d57cd99e4eb8e9b52608112aed64820829015a97d",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 9
+  },
+  "chart_1": {
+    "path": "charts/daily_net_sales.png",
+    "locator": "",
+    "sha256": "923a1fb86f04268551d4073026c96441b0a5c0638636872181ac843e4a0f3536",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 10
+  },
+  "chart_2": {
+    "path": "charts/channel_delta.png",
+    "locator": "",
+    "sha256": "aef5d65a0eeab15affebcfb206c58a1cf549f92279adac6dc13d1d1294b3bfda",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 10
+  },
+  "chart_3": {
+    "path": "charts/category_delta.png",
+    "locator": "",
+    "sha256": "b1aa1baf11cbcdbdeb6fac92d0ebf1cf357ea38ff2a48c65a3a1627640d767f9",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 10
+  },
+  "chart_4": {
+    "path": "charts/refund_bridge.png",
+    "locator": "",
+    "sha256": "4d9e675901d9d4e8734fae1cf6905ce60c730cb43cf65ae5f5d8bff164f62ae9",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 10
+  },
+  "chart_5": {
+    "path": "charts/order_aov.png",
+    "locator": "",
+    "sha256": "bcb62a71b7378da46f40d8a4447cf0b7b272593d8e3352dfdfe72748514db9f8",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 10
+  },
+  "chart_6": {
+    "path": "charts/quality_channel_impact.png",
+    "locator": "",
+    "sha256": "f65a3876d409c483f02b43d127b4340975fd640ce349c5635266dfac1d44bb17",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 10
+  },
+  "chart_7": {
+    "path": "charts/quality_category_impact.png",
+    "locator": "",
+    "sha256": "c469ac8c3482d43caff05f641930db1e33b324c4d896acce5eed74c8381ff441",
+    "run_id": "20261113_160349_a7a114",
+    "tool_call_number": 10
+  }
+}

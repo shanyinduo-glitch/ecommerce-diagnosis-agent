@@ -1,0 +1,1 @@
+SELECT channel, period, SUM(pre_refund_cents)/100.0 AS pre_refund_sales, SUM(refund_amount_cents)/100.0 AS refund_amount, SUM(net_cents)/100.0 AS net_sales, COUNT(DISTINCT order_id) AS order_count, SUM(net_cents)/100.0/COUNT(DISTINCT order_id) AS net_aov FROM items WHERE period IN ('control','analysis') AND channel='搜索' GROUP BY channel, period ORDER BY period;

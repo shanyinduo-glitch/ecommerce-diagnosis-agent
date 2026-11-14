@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "complete": true,
+  "checks": {
+    "channel_reconciles": true,
+    "category_reconciles": true,
+    "quality_bridge_reconciles": true,
+    "overall.overall.refund_bridge_reconciles": true,
+    "overall.overall.order_aov_reconciles": true,
+    "channel.App.refund_bridge_reconciles": true,
+    "channel.App.order_aov_reconciles": true,
+    "channel.搜索.refund_bridge_reconciles": true,
+    "channel.搜索.order_aov_reconciles": true,
+    "channel.网页.refund_bridge_reconciles": true,
+    "channel.网页.order_aov_reconciles": true,
+    "channel.联盟.refund_bridge_reconciles": true,
+    "channel.联盟.order_aov_reconciles": true,
+    "category.家居.refund_bridge_reconciles": true,
+    "category.家居.order_aov_reconciles": true,
+    "category.数码.refund_bridge_reconciles": true,
+    "category.数码.order_aov_reconciles": true,
+    "category.服饰.refund_bridge_reconciles": true,
+    "category.服饰.order_aov_reconciles": true,
+    "category.未知.refund_bridge_reconciles": true,
+    "category.未知.order_aov_reconciles": true,
+    "category.美妆.refund_bridge_reconciles": true,
+    "category.美妆.order_aov_reconciles": true,
+    "category.食品.refund_bridge_reconciles": true,
+    "category.食品.order_aov_reconciles": true
+  },
+  "skipped": {},
+  "note": "passed 仅表示已执行的检查通过；skipped 不视为已验证，complete=false 时仍为部分结果。"
+}

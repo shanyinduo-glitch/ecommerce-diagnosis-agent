@@ -1,0 +1,2 @@
+# Frozen evidence must retain its exact bytes and original hashes on every host.
+demo_runs/** -text -diff

@@ -1,0 +1,28 @@
+{
+  "purpose": "按 date/channel 关联 traffic 与 daily_channel，比较 App 渠道两期访客人次、订单量及订单量/访客人次比值",
+  "query": "SELECT t.period, SUM(t.visitors) AS visits, SUM(d.order_count) AS order_count, SUM(d.net_cents)/100.0 AS net_sales, SUM(d.order_count)*1.0/NULLIF(SUM(t.visitors),0) AS orders_per_visit FROM traffic t JOIN daily_channel d ON t.date = d.date AND t.channel = d.channel WHERE t.period IN ('control','analysis') AND t.channel = 'App' GROUP BY t.period ORDER BY t.period;",
+  "columns": [
+    "period",
+    "visits",
+    "order_count",
+    "net_sales",
+    "orders_per_visit"
+  ],
+  "rows": [
+    {
+      "period": "analysis",
+      "visits": 19968,
+      "order_count": 1455,
+      "net_sales": 458580.82,
+      "orders_per_visit": 0.07286658653846154
+    },
+    {
+      "period": "control",
+      "visits": 20012,
+      "order_count": 1590,
+      "net_sales": 583224.92,
+      "orders_per_visit": 0.0794523286028383
+    }
+  ],
+  "row_count": 2
+}

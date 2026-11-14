@@ -2,13 +2,18 @@
 import math
 import sqlite3
 import time
+import pandas as pd
 
 class ReadonlySQL:
     def __init__(self, items, traffic):
         self.db = sqlite3.connect(":memory:")
         items.to_sql("items", self.db, index=False)
         traffic.to_sql("traffic", self.db, index=False)
-        daily = items.groupby(["date", "channel", "period"], as_index=False).agg(net_cents=("net_cents", "sum"), order_count=("order_id", "nunique"))
+        aggregates = {"order_count": ("order_id", "nunique")}
+        if "net_cents" in items:
+            aggregates["net_cents"] = ("net_cents", "sum")
+        daily = (items.groupby(["date", "channel", "period"], as_index=False).agg(**aggregates)
+                 if "channel" in items else pd.DataFrame(columns=["date", "channel", "period", *aggregates]))
         daily.to_sql("daily_channel", self.db, index=False)
         self.schema = {"items": list(items.columns), "traffic": list(traffic.columns), "daily_channel": list(daily.columns)}
         self.db.enable_load_extension(False)

@@ -1,0 +1,37 @@
+{
+  "run_id": "20261113_160349_a7a114",
+  "case_id": "case_02",
+  "config": {
+    "model": "qwen3.8-flash",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_calls": 20,
+    "timeout_seconds": 90,
+    "max_seconds": 600,
+    "max_tool_calls": 30,
+    "max_errors": 6,
+    "control_start": "2026-09-01",
+    "control_end": "2026-09-14",
+    "analysis_start": "2026-09-15",
+    "analysis_end": "2026-09-28"
+  },
+  "fault_injection": false,
+  "data_hashes": {
+    "order_items": "0ef874366c9a86de8bcf5150ad64f049ccb4a924b51c5060689a34238f8f8c00",
+    "products": "d6fa417ffef8e6dbec4e69780c3950a2c60616ef4bb806cbb30979fbec7af856",
+    "traffic": "b32e50635863146d5d82e607f86db29e9c2a5e8c8493f936b1c6c2e43e47f4bb"
+  },
+  "source_code_hashes": {
+    "agent.py": "b77a6d29f55cd90d0e8f7649a9020d98beffd40bdad0a484c0c499eb1accee13",
+    "analysis.py": "ca4b9f06b1237b0773de9e42d854c7bb44402978242ca45b34fa255041899691",
+    "checkpoint.py": "3d2f698fdb9e6cefc17eae643188c43c0764c2f192d9b9df72d7ebbceaf45495",
+    "claims.py": "3fa0622db7c7a3142d895d68dd2245062662e2562d1cc7c3484f21355748d136",
+    "cli.py": "0f1771e41ab3e8d7add0c8d772ba3c239b300057a18b6532b728ba524339342d",
+    "io.py": "c1d62f348b17562884555ba7372bf0f5b8ac13379bdc009bc0da84d6b28f087d",
+    "reporting.py": "518fd49e6c260ad4b39cbd24ed20e93a76c23bfd4070c600c13d1819c53ec728",
+    "sql.py": "a21b4d22fa8e1b6b9aa391f4fed5dcda9b30412bd8a5bc7333f8340c82fb886c",
+    "__init__.py": "31501f9c231c24e8b4d3f175589260cba6e622e4d5f0addd2f3092f83e748652"
+  },
+  "started_utc": "2026-11-13T08:03:49.734428+00:00",
+  "execution_mode": "registered_python_and_readonly_sql",
+  "status": "completed"
+}

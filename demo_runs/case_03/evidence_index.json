@@ -1,0 +1,86 @@
+{
+  "profile": {
+    "path": "data_profile.json",
+    "locator": "",
+    "sha256": "f66d368c607b42d0d0be4b0e5e7690dea359cedd3d55d80ece1d18fe27e0ce4a",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 2
+  },
+  "quality": {
+    "path": "quality_report.json",
+    "locator": "",
+    "sha256": "a166c5fee1c7cb337a78fa015b9c4b9d50c704724ef97ac18e27b419d5ef234d",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 3
+  },
+  "metrics": {
+    "path": "metrics.json",
+    "locator": "",
+    "sha256": "477ca35750b37f4fa5530ac70c42bc4636909521e72380c5477e1e209ce73692",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 4
+  },
+  "sql_001": {
+    "path": "queries/sql_001.json",
+    "locator": "rows",
+    "sha256": "e35caa79864bd133b4df5a90c490878a1e7cc21fac6f7ae55f78ff675713f303",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 5
+  },
+  "sql_002": {
+    "path": "queries/sql_002.json",
+    "locator": "rows",
+    "sha256": "3e9d365469582b45975dc2d5ddc850203d5bc8d18d2731b7a8bdf99883895c51",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 6
+  },
+  "chart_1": {
+    "path": "charts/daily_net_sales.png",
+    "locator": "",
+    "sha256": "fb9ae3f871302b807eb973e94d89534bc21d8b10aaa94295b1a18244c1a05d56",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 7
+  },
+  "chart_2": {
+    "path": "charts/channel_delta.png",
+    "locator": "",
+    "sha256": "cfdd581955054b53bc42dee6d37e8aa9f10ecd516a84cccff03ffaafc934a14e",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 7
+  },
+  "chart_3": {
+    "path": "charts/category_delta.png",
+    "locator": "",
+    "sha256": "5513c80d01e1c9cb5094811ebe333c0e6c808fd2da08400fde0b8a719e96aba3",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 7
+  },
+  "chart_4": {
+    "path": "charts/refund_bridge.png",
+    "locator": "",
+    "sha256": "de3d7d87777af882570d4a46e44732ea287347a616382b70b962e87d140e3298",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 7
+  },
+  "chart_5": {
+    "path": "charts/order_aov.png",
+    "locator": "",
+    "sha256": "645af4ccb75244c292523fa5c3947cb16ff9d30c0aabf49d5ce298d159092611",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 7
+  },
+  "chart_6": {
+    "path": "charts/quality_channel_impact.png",
+    "locator": "",
+    "sha256": "0bd6732f88fb3679531bf8b0e0b90b34a039ceaffa861b3515aba2dfb842eada",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 7
+  },
+  "chart_7": {
+    "path": "charts/quality_category_impact.png",
+    "locator": "",
+    "sha256": "997954061e523a5b77dbff48d9cb97091819f1658f9cdefe78fcc72967cb2edd",
+    "run_id": "20261113_160438_f97576",
+    "tool_call_number": 7
+  }
+}

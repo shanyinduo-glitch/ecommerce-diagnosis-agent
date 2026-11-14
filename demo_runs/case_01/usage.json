@@ -1,0 +1,12 @@
+{
+  "model_calls": 8,
+  "tool_calls": 8,
+  "tool_errors": 0,
+  "input_tokens": 50016,
+  "output_tokens": 1236,
+  "total_tokens": 51252,
+  "usage_missing_calls": 0,
+  "seconds": 30.312,
+  "status": "completed",
+  "token_totals_complete": true
+}

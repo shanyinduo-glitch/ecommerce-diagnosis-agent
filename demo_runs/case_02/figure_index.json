@@ -1,0 +1,104 @@
+{
+  "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+  "figures": [
+    {
+      "id": "daily_net_sales",
+      "png": "charts/daily_net_sales.png",
+      "svg": "charts/daily_net_sales.svg",
+      "available": true,
+      "caption": "清洗后每日净销售额；虚线标记分析期开始。",
+      "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+      "unit": "元",
+      "png_sha256": "923a1fb86f04268551d4073026c96441b0a5c0638636872181ac843e4a0f3536",
+      "source_hashes": {
+        "metrics.json": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+        "tables/daily.csv": "40a66bbca46790ebef568272b11744a921f21d3dd5ca9a9b718e837126667145"
+      }
+    },
+    {
+      "id": "channel_delta",
+      "png": "charts/channel_delta.png",
+      "svg": "charts/channel_delta.svg",
+      "available": true,
+      "caption": "渠道拆解视角；红色减少、绿色增加。渠道与品类贡献不能相加。",
+      "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+      "unit": "元",
+      "png_sha256": "aef5d65a0eeab15affebcfb206c58a1cf549f92279adac6dc13d1d1294b3bfda",
+      "source_hashes": {
+        "metrics.json": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+        "tables/by_channel.csv": "4ed6f24201b27e10b59aac4cfdaa61ec0d3f82bef24f06cfaf04ea81ef6d63ab"
+      }
+    },
+    {
+      "id": "category_delta",
+      "png": "charts/category_delta.png",
+      "svg": "charts/category_delta.svg",
+      "available": true,
+      "caption": "品类拆解视角；红色减少、绿色增加。渠道与品类贡献不能相加。",
+      "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+      "unit": "元",
+      "png_sha256": "b1aa1baf11cbcdbdeb6fac92d0ebf1cf357ea38ff2a48c65a3a1627640d767f9",
+      "source_hashes": {
+        "metrics.json": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+        "tables/by_category.csv": "e844fab2ac4b53ac93cbd54c63fa11e5ccb855b36f4f05348015a3f51c8189e6"
+      }
+    },
+    {
+      "id": "refund_bridge",
+      "png": "charts/refund_bridge.png",
+      "svg": "charts/refund_bridge.svg",
+      "available": true,
+      "caption": "退款前销售额变化减退款变化等于净销售额变化；不能说明退款的业务原因。",
+      "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+      "unit": "元",
+      "png_sha256": "4d9e675901d9d4e8734fae1cf6905ce60c730cb43cf65ae5f5d8bff164f62ae9",
+      "source_hashes": {
+        "metrics.json": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+        "tables/decomposition.csv": "36ac61fa0326e42778cab5a4a96270aa12c2d963f00fd1b88d14ce7aab5d8cc5"
+      }
+    },
+    {
+      "id": "order_aov",
+      "png": "charts/order_aov.png",
+      "svg": "charts/order_aov.svg",
+      "available": true,
+      "caption": "两因素对称分解；净客单价已包含退款，不与退款桥接各项再次相加。",
+      "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+      "unit": "元",
+      "png_sha256": "bcb62a71b7378da46f40d8a4447cf0b7b272593d8e3352dfdfe72748514db9f8",
+      "source_hashes": {
+        "metrics.json": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+        "tables/decomposition.csv": "36ac61fa0326e42778cab5a4a96270aa12c2d963f00fd1b88d14ce7aab5d8cc5"
+      }
+    },
+    {
+      "id": "quality_channel_impact",
+      "png": "charts/quality_channel_impact.png",
+      "svg": "charts/quality_channel_impact.svg",
+      "available": true,
+      "caption": "原始行汇总仅用于展示异常影响，不是真实交易额或替代清洗口径。",
+      "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+      "unit": "元",
+      "png_sha256": "f65a3876d409c483f02b43d127b4340975fd640ce349c5635266dfac1d44bb17",
+      "source_hashes": {
+        "metrics.json": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+        "attribution_impact.json": "e8cb5b1f051e90d0516ae0556b8969eca5f4663122f26c3d94210a20f8a9cbd1"
+      }
+    },
+    {
+      "id": "quality_category_impact",
+      "png": "charts/quality_category_impact.png",
+      "svg": "charts/quality_category_impact.svg",
+      "available": true,
+      "caption": "原始行汇总仅用于展示异常影响，不是真实交易额或替代清洗口径。",
+      "comparison": "分析期 2026-09-15—2026-09-28 减对比期 2026-09-01—2026-09-14",
+      "unit": "元",
+      "png_sha256": "c469ac8c3482d43caff05f641930db1e33b324c4d896acce5eed74c8381ff441",
+      "source_hashes": {
+        "metrics.json": "f2ae134fa8a256d0d8dac5eb74609e12708b1b93f0334c3a222893b8b1c8ec50",
+        "attribution_impact.json": "e8cb5b1f051e90d0516ae0556b8969eca5f4663122f26c3d94210a20f8a9cbd1"
+      }
+    }
+  ],
+  "note": "PNG 300 dpi，SVG 可编辑缩放；请连同图注、时期、单位、来源使用。available=false 为不可计算提示图，不代表零值。"
+}

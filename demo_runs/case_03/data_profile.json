@@ -1,0 +1,89 @@
+{
+  "order_items": {
+    "rows": 10739,
+    "columns": [
+      "order_id",
+      "item_id",
+      "date",
+      "product_id",
+      "channel",
+      "quantity",
+      "gross_amount",
+      "discount_amount",
+      "refund_amount"
+    ],
+    "missing_columns": [],
+    "blank_cells": 0,
+    "sample": [
+      {
+        "order_id": "O0007595",
+        "item_id": "I00009261",
+        "date": "2026-09-25",
+        "product_id": "P0027",
+        "channel": "App",
+        "quantity": "1",
+        "gross_amount": "32.83",
+        "discount_amount": "5.99",
+        "refund_amount": "0.00"
+      },
+      {
+        "order_id": "O0005479",
+        "item_id": "I00006672",
+        "date": "2026-09-18",
+        "product_id": "P0018",
+        "channel": "网页",
+        "quantity": "1",
+        "gross_amount": "258.45",
+        "discount_amount": "22.28",
+        "refund_amount": "0.00"
+      }
+    ]
+  },
+  "products": {
+    "rows": 60,
+    "columns": [
+      "product_id",
+      "product_name",
+      "category",
+      "list_price"
+    ],
+    "missing_columns": [],
+    "blank_cells": 0,
+    "sample": [
+      {
+        "product_id": "P0001",
+        "product_name": "数码商品01",
+        "category": "数码",
+        "list_price": "681.45"
+      },
+      {
+        "product_id": "P0002",
+        "product_name": "数码商品02",
+        "category": "数码",
+        "list_price": "876.59"
+      }
+    ]
+  },
+  "traffic": {
+    "rows": 112,
+    "columns": [
+      "date",
+      "channel",
+      "visitors"
+    ],
+    "missing_columns": [],
+    "blank_cells": 0,
+    "sample": [
+      {
+        "date": "2026-09-01",
+        "channel": "App",
+        "visitors": "1443"
+      },
+      {
+        "date": "2026-09-01",
+        "channel": "网页",
+        "visitors": "1074"
+      }
+    ]
+  }
+}

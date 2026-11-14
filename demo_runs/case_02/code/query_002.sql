@@ -1,0 +1,1 @@
+SELECT category, period, SUM(net_cents)/100.0 AS net_sales, SUM(pre_refund_cents)/100.0 AS pre_refund_sales, SUM(refund_amount_cents)/100.0 AS refund_amount, COUNT(DISTINCT order_id) AS order_count FROM items WHERE period IN ('control','analysis') AND category='数码' GROUP BY category, period ORDER BY period;

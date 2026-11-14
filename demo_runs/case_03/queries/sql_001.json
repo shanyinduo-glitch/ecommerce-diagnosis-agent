@@ -1,0 +1,115 @@
+{
+  "purpose": "按渠道对比两期净销售额、订单数、客单价、退款率与访客人次，验证指标口径并定位App渠道下降结构",
+  "query": "SELECT i.period,\n       i.channel,\n       SUM(i.net_cents)/100.0 AS net_sales,\n       COUNT(DISTINCT i.order_id) AS order_count,\n       SUM(i.pre_refund_cents)/100.0 AS pre_refund_sales,\n       SUM(i.refund_amount_cents)/100.0 AS refund_amount,\n       SUM(i.gross_amount_cents - i.discount_amount_cents)/100.0 AS gross_after_discount,\n       ROUND(SUM(i.refund_amount_cents)*1.0 / NULLIF(SUM(i.gross_amount_cents - i.discount_amount_cents),0), 6) AS refund_rate,\n       (SUM(i.net_cents)/100.0)/COUNT(DISTINCT i.order_id) AS aov,\n       t.visits\nFROM items i\nLEFT JOIN (SELECT period, channel, SUM(visitors) AS visits FROM traffic GROUP BY period, channel) t\n  ON t.period = i.period AND t.channel = i.channel\nWHERE i.period IN ('control','analysis')\nGROUP BY i.period, i.channel, t.visits\nORDER BY i.channel, i.period",
+  "columns": [
+    "period",
+    "channel",
+    "net_sales",
+    "order_count",
+    "pre_refund_sales",
+    "refund_amount",
+    "gross_after_discount",
+    "refund_rate",
+    "aov",
+    "visits"
+  ],
+  "rows": [
+    {
+      "period": "analysis",
+      "channel": "App",
+      "net_sales": 471114.4,
+      "order_count": 1509,
+      "pre_refund_sales": 486081.6,
+      "refund_amount": 14967.2,
+      "gross_after_discount": 486081.6,
+      "refund_rate": 0.030792,
+      "aov": 312.2030483764082,
+      "visits": 19759
+    },
+    {
+      "period": "control",
+      "channel": "App",
+      "net_sales": 525128.99,
+      "order_count": 1496,
+      "pre_refund_sales": 540582.62,
+      "refund_amount": 15453.63,
+      "gross_after_discount": 540582.62,
+      "refund_rate": 0.028587,
+      "aov": 351.02205213903744,
+      "visits": 19953
+    },
+    {
+      "period": "analysis",
+      "channel": "搜索",
+      "net_sales": 381279.85,
+      "order_count": 1194,
+      "pre_refund_sales": 389538.71,
+      "refund_amount": 8258.86,
+      "gross_after_discount": 389538.71,
+      "refund_rate": 0.021202,
+      "aov": 319.3298576214405,
+      "visits": 16742
+    },
+    {
+      "period": "control",
+      "channel": "搜索",
+      "net_sales": 402570.35,
+      "order_count": 1248,
+      "pre_refund_sales": 413417.18,
+      "refund_amount": 10846.83,
+      "gross_after_discount": 413417.18,
+      "refund_rate": 0.026237,
+      "aov": 322.5723958333333,
+      "visits": 17025
+    },
+    {
+      "period": "analysis",
+      "channel": "网页",
+      "net_sales": 296335.38,
+      "order_count": 955,
+      "pre_refund_sales": 306231.28,
+      "refund_amount": 9895.9,
+      "gross_after_discount": 306231.28,
+      "refund_rate": 0.032315,
+      "aov": 310.2988272251309,
+      "visits": 14113
+    },
+    {
+      "period": "control",
+      "channel": "网页",
+      "net_sales": 335401.61,
+      "order_count": 964,
+      "pre_refund_sales": 346314.22,
+      "refund_amount": 10912.61,
+      "gross_after_discount": 346314.22,
+      "refund_rate": 0.031511,
+      "aov": 347.92698132780083,
+      "visits": 14411
+    },
+    {
+      "period": "analysis",
+      "channel": "联盟",
+      "net_sales": 206745.51,
+      "order_count": 694,
+      "pre_refund_sales": 213025.0,
+      "refund_amount": 6279.49,
+      "gross_after_discount": 213025.0,
+      "refund_rate": 0.029478,
+      "aov": 297.9041930835735,
+      "visits": 11438
+    },
+    {
+      "period": "control",
+      "channel": "联盟",
+      "net_sales": 245279.04,
+      "order_count": 730,
+      "pre_refund_sales": 251191.55,
+      "refund_amount": 5912.51,
+      "gross_after_discount": 251191.55,
+      "refund_rate": 0.023538,
+      "aov": 335.9986849315069,
+      "visits": 11574
+    }
+  ],
+  "row_count": 8
+}

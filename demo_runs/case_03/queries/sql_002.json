@@ -1,0 +1,37 @@
+{
+  "purpose": "下钻最大下降品类（服饰）两期净销售额、订单数、客单价与退款，判断下降来自量还是价",
+  "query": "SELECT period,\n       category,\n       SUM(net_cents)/100.0 AS net_sales,\n       COUNT(DISTINCT order_id) AS order_count,\n       SUM(pre_refund_cents)/100.0 AS pre_refund_sales,\n       SUM(refund_amount_cents)/100.0 AS refund_amount,\n       (SUM(net_cents)/100.0)/COUNT(DISTINCT order_id) AS aov,\n       SUM(quantity) AS quantity\nFROM items\nWHERE period IN ('control','analysis') AND category = '服饰'\nGROUP BY period, category\nORDER BY period",
+  "columns": [
+    "period",
+    "category",
+    "net_sales",
+    "order_count",
+    "pre_refund_sales",
+    "refund_amount",
+    "aov",
+    "quantity"
+  ],
+  "rows": [
+    {
+      "period": "analysis",
+      "category": "服饰",
+      "net_sales": 71296.43,
+      "order_count": 1108,
+      "pre_refund_sales": 73555.81,
+      "refund_amount": 2259.38,
+      "aov": 64.3469584837545,
+      "quantity": 1162
+    },
+    {
+      "period": "control",
+      "category": "服饰",
+      "net_sales": 258732.37,
+      "order_count": 1193,
+      "pre_refund_sales": 267668.27,
+      "refund_amount": 8935.9,
+      "aov": 216.87541492036883,
+      "quantity": 1470
+    }
+  ],
+  "row_count": 2
+}

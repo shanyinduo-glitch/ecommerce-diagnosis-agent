@@ -1,0 +1,37 @@
+{
+  "purpose": "核对家居品类两期净销售额、退款率及订单/客单价（金额分转元）",
+  "query": "SELECT category, period, SUM(net_cents)/100.0 AS net_sales, SUM(pre_refund_cents)/100.0 AS pre_refund_sales, SUM(refund_amount_cents)/100.0 AS refund_amount, SUM(refund_amount_cents)*1.0/NULLIF(SUM(pre_refund_cents),0) AS refund_rate, COUNT(DISTINCT order_id) AS order_count, SUM(net_cents)/100.0/COUNT(DISTINCT order_id) AS net_aov FROM items WHERE period IN ('control','analysis') AND category='家居' GROUP BY category, period ORDER BY period;",
+  "columns": [
+    "category",
+    "period",
+    "net_sales",
+    "pre_refund_sales",
+    "refund_amount",
+    "refund_rate",
+    "order_count",
+    "net_aov"
+  ],
+  "rows": [
+    {
+      "category": "家居",
+      "period": "analysis",
+      "net_sales": 260975.4,
+      "pre_refund_sales": 267940.28,
+      "refund_amount": 6964.88,
+      "refund_rate": 0.025994150636850868,
+      "order_count": 899,
+      "net_aov": 290.2952169076752
+    },
+    {
+      "category": "家居",
+      "period": "control",
+      "net_sales": 313693.98,
+      "pre_refund_sales": 319105.43,
+      "refund_amount": 5411.45,
+      "refund_rate": 0.016958188395603296,
+      "order_count": 1027,
+      "net_aov": 305.44691333982473
+    }
+  ],
+  "row_count": 2
+}

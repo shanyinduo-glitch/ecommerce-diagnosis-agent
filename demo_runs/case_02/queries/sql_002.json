@@ -1,0 +1,31 @@
+{
+  "purpose": "比较重点下降品类数码两期的净销售额、退款前销售额、退款金额与订单量（金额分转元）",
+  "query": "SELECT category, period, SUM(net_cents)/100.0 AS net_sales, SUM(pre_refund_cents)/100.0 AS pre_refund_sales, SUM(refund_amount_cents)/100.0 AS refund_amount, COUNT(DISTINCT order_id) AS order_count FROM items WHERE period IN ('control','analysis') AND category='数码' GROUP BY category, period ORDER BY period;",
+  "columns": [
+    "category",
+    "period",
+    "net_sales",
+    "pre_refund_sales",
+    "refund_amount",
+    "order_count"
+  ],
+  "rows": [
+    {
+      "category": "数码",
+      "period": "analysis",
+      "net_sales": 425483.6,
+      "pre_refund_sales": 702343.71,
+      "refund_amount": 276860.11,
+      "order_count": 1066
+    },
+    {
+      "category": "数码",
+      "period": "control",
+      "net_sales": 631553.47,
+      "pre_refund_sales": 652437.78,
+      "refund_amount": 20884.31,
+      "order_count": 1005
+    }
+  ],
+  "row_count": 2
+}

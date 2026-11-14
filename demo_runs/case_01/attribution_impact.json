@@ -1,0 +1,150 @@
+{
+  "available": true,
+  "raw_difference": -156410.64,
+  "clean_difference": -152886.87,
+  "difference_adjustment": 3523.77,
+  "dimensions": {
+    "channel": {
+      "available": true,
+      "raw_top_decline_source": "搜索",
+      "clean_top_decline_source": "搜索",
+      "source_changed": false,
+      "raw_ranking": [
+        {
+          "group": "搜索",
+          "difference": -186904.17,
+          "contribution": 1.1949581562993412
+        },
+        {
+          "group": "App",
+          "difference": -9096.81,
+          "contribution": 0.058159790152383484
+        },
+        {
+          "group": "网页",
+          "difference": -2515.93,
+          "contribution": 0.016085414649540462
+        },
+        {
+          "group": "联盟",
+          "difference": 42106.27,
+          "contribution": -0.2692033611012652
+        }
+      ],
+      "clean_ranking": [
+        {
+          "group": "搜索",
+          "difference": -186408.28,
+          "contribution": 1.2192563036969755
+        },
+        {
+          "group": "App",
+          "difference": -7302.19,
+          "contribution": 0.047762047846227736
+        },
+        {
+          "group": "网页",
+          "difference": -2296.33,
+          "contribution": 0.01501979862626529
+        },
+        {
+          "group": "联盟",
+          "difference": 43119.93,
+          "contribution": -0.2820381501694685
+        }
+      ],
+      "rank_changed": false,
+      "raw_tied_sources": [
+        "搜索"
+      ],
+      "clean_tied_sources": [
+        "搜索"
+      ]
+    },
+    "category": {
+      "available": true,
+      "raw_top_decline_source": "家居",
+      "clean_top_decline_source": "家居",
+      "source_changed": false,
+      "raw_ranking": [
+        {
+          "group": "家居",
+          "difference": -52544.75,
+          "contribution": 0.33594102038071066
+        },
+        {
+          "group": "服饰",
+          "difference": -43672.2,
+          "contribution": 0.27921502015463906
+        },
+        {
+          "group": "数码",
+          "difference": -25847.85,
+          "contribution": 0.16525634061723676
+        },
+        {
+          "group": "食品",
+          "difference": -23713.71,
+          "contribution": 0.1516118724403915
+        },
+        {
+          "group": "美妆",
+          "difference": -9063.81,
+          "contribution": 0.05794880706325349
+        },
+        {
+          "group": "未知",
+          "difference": -1568.32,
+          "contribution": 0.010026939343768427
+        }
+      ],
+      "clean_ranking": [
+        {
+          "group": "家居",
+          "difference": -52718.58,
+          "contribution": 0.34482084694388737
+        },
+        {
+          "group": "服饰",
+          "difference": -42559.05,
+          "contribution": 0.2783695552142575
+        },
+        {
+          "group": "食品",
+          "difference": -23624.09,
+          "contribution": 0.154520070951809
+        },
+        {
+          "group": "数码",
+          "difference": -23192.48,
+          "contribution": 0.151697003150107
+        },
+        {
+          "group": "美妆",
+          "difference": -9224.35,
+          "contribution": 0.060334481306341094
+        },
+        {
+          "group": "未知",
+          "difference": -1568.32,
+          "contribution": 0.010258042433598125
+        }
+      ],
+      "rank_changed": true,
+      "raw_tied_sources": [
+        "家居"
+      ],
+      "clean_tied_sources": [
+        "家居"
+      ]
+    }
+  },
+  "unknown_category": {
+    "rows": 8,
+    "control_net_sales": 1803.0,
+    "analysis_net_sales": 234.68,
+    "difference": -1568.32,
+    "note": "未匹配商品金额保留为未知品类；已知品类排名不证明未知记录真实所属品类。"
+  },
+  "note": "仅比较本次输入按既定规则清洗前后的账面汇总。原始行含重复/冲突，不是真实交易基准；来源未变不代表对其他异常普遍稳健。"
+}

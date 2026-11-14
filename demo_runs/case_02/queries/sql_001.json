@@ -1,0 +1,37 @@
+{
+  "purpose": "核对重点下降渠道 App 两期的净销售额、订单量、客单价、退款前销售额与退款率（金额单位分转元）",
+  "query": "SELECT channel, period, SUM(net_cents)/100.0 AS net_sales, COUNT(DISTINCT order_id) AS order_count, (SUM(net_cents)/100.0)/COUNT(DISTINCT order_id) AS aov, SUM(pre_refund_cents)/100.0 AS pre_refund_sales, SUM(refund_amount_cents)/100.0 AS refund_amount, SUM(refund_amount_cents)/NULLIF(SUM(pre_refund_cents),0) AS refund_rate FROM items WHERE period IN ('control','analysis') AND channel='App' GROUP BY channel, period ORDER BY period;",
+  "columns": [
+    "channel",
+    "period",
+    "net_sales",
+    "order_count",
+    "aov",
+    "pre_refund_sales",
+    "refund_amount",
+    "refund_rate"
+  ],
+  "rows": [
+    {
+      "channel": "App",
+      "period": "analysis",
+      "net_sales": 458580.82,
+      "order_count": 1455,
+      "aov": 315.1758213058419,
+      "pre_refund_sales": 556324.77,
+      "refund_amount": 97743.95,
+      "refund_rate": 0
+    },
+    {
+      "channel": "App",
+      "period": "control",
+      "net_sales": 583224.92,
+      "order_count": 1590,
+      "aov": 366.80812578616354,
+      "pre_refund_sales": 598009.83,
+      "refund_amount": 14784.91,
+      "refund_rate": 0
+    }
+  ],
+  "row_count": 2
+}

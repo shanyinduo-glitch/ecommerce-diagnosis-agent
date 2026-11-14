@@ -1,0 +1,734 @@
+{
+  "overall": {
+    "control": {
+      "net_sales": 1508379.99,
+      "order_count": 4438,
+      "aov": 339.87832131590807,
+      "refund_rate": 0.027795955640687774,
+      "pre_refund_sales": 1551505.57,
+      "refund_amount": 43125.58,
+      "quantity": 6397
+    },
+    "analysis": {
+      "net_sales": 1355475.14,
+      "order_count": 4352,
+      "aov": 311.4602803308823,
+      "refund_rate": 0.02824726594630138,
+      "pre_refund_sales": 1394876.59,
+      "refund_amount": 39401.45,
+      "quantity": 6058
+    },
+    "difference": -152904.85,
+    "change_rate": -0.10137024557054751,
+    "decomposition": {
+      "refund_bridge": {
+        "available": true,
+        "pre_refund_change": -156628.98,
+        "refund_change": -3724.13,
+        "refund_effect": 3724.13,
+        "net_change": -152904.85,
+        "reconciles": true,
+        "reason": null
+      },
+      "order_aov": {
+        "available": true,
+        "order_effect": -28007.559870811987,
+        "aov_effect": -124897.29012918801,
+        "net_change": -152904.85,
+        "reconciles": true,
+        "reason": null,
+        "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+      }
+    }
+  },
+  "data_quality": {
+    "raw_item_rows": 10739,
+    "exact_duplicate_item_ids": 12,
+    "duplicate_rows_removed": 12,
+    "conflicting_item_ids_excluded": 4,
+    "conflict_rows_excluded": 8,
+    "unmatched_product_rows": 8,
+    "clean_item_rows": 10719,
+    "excluded_raw_net_sales": 3506.26,
+    "outside_period_rows": 0,
+    "availability": {
+      "full": true,
+      "metrics": {
+        "net_sales": true,
+        "order_count": true,
+        "pre_refund_sales": true,
+        "refund_amount": true,
+        "quantity": true,
+        "channel": true,
+        "category": true,
+        "traffic": true,
+        "aov": true,
+        "refund_rate": true
+      },
+      "reasons": []
+    },
+    "note": "冲突排除金额是原始记录汇总，不代表已确认的真实交易损失。缺失字段时，重复/冲突仅基于现有字段。",
+    "bridge": [
+      {
+        "period": "control",
+        "raw_net_sales": 1513592.26,
+        "duplicate_removed": 2477.2,
+        "conflict_removed_after_dedup": 2735.07,
+        "clean_net_sales": 1508379.99
+      },
+      {
+        "period": "analysis",
+        "raw_net_sales": 1356618.22,
+        "duplicate_removed": 371.89,
+        "conflict_removed_after_dedup": 771.19,
+        "clean_net_sales": 1355475.14
+      }
+    ],
+    "attribution_impact": {
+      "available": true,
+      "raw_difference": -156974.04,
+      "clean_difference": -152904.85,
+      "difference_adjustment": 4069.19,
+      "dimensions": {
+        "channel": {
+          "available": true,
+          "raw_top_decline_source": "App",
+          "clean_top_decline_source": "App",
+          "source_changed": false,
+          "raw_ranking": [
+            {
+              "group": "App",
+              "difference": -55060.92,
+              "contribution": 0.3507644958363816
+            },
+            {
+              "group": "网页",
+              "difference": -41137.16,
+              "contribution": 0.26206345966505035
+            },
+            {
+              "group": "联盟",
+              "difference": -38533.53,
+              "contribution": 0.24547708652972172
+            },
+            {
+              "group": "搜索",
+              "difference": -22242.43,
+              "contribution": 0.14169495796884632
+            }
+          ],
+          "clean_ranking": [
+            {
+              "group": "App",
+              "difference": -54014.59,
+              "contribution": 0.35325622437744775
+            },
+            {
+              "group": "网页",
+              "difference": -39066.23,
+              "contribution": 0.25549372698119127
+            },
+            {
+              "group": "联盟",
+              "difference": -38533.53,
+              "contribution": 0.252009861034493
+            },
+            {
+              "group": "搜索",
+              "difference": -21290.5,
+              "contribution": 0.13924018760686793
+            }
+          ],
+          "rank_changed": false,
+          "raw_tied_sources": [
+            "App"
+          ],
+          "clean_tied_sources": [
+            "App"
+          ]
+        },
+        "category": {
+          "available": true,
+          "raw_top_decline_source": "服饰",
+          "clean_top_decline_source": "服饰",
+          "source_changed": false,
+          "raw_ranking": [
+            {
+              "group": "服饰",
+              "difference": -188185.46,
+              "contribution": 1.1988317303931273
+            },
+            {
+              "group": "家居",
+              "difference": -20364.12,
+              "contribution": 0.12972922146872182
+            },
+            {
+              "group": "美妆",
+              "difference": -7933.83,
+              "contribution": 0.05054230623101756
+            },
+            {
+              "group": "食品",
+              "difference": -3720.91,
+              "contribution": 0.023703983155431305
+            },
+            {
+              "group": "未知",
+              "difference": 747.66,
+              "contribution": -0.004762953160917563
+            },
+            {
+              "group": "数码",
+              "difference": 62482.62,
+              "contribution": -0.39804428808738057
+            }
+          ],
+          "clean_ranking": [
+            {
+              "group": "服饰",
+              "difference": -187435.94,
+              "contribution": 1.2258338437269976
+            },
+            {
+              "group": "家居",
+              "difference": -19797.14,
+              "contribution": 0.1294735909292609
+            },
+            {
+              "group": "美妆",
+              "difference": -7711.44,
+              "contribution": 0.05043293263751934
+            },
+            {
+              "group": "食品",
+              "difference": -3513.77,
+              "contribution": 0.022980108217626843
+            },
+            {
+              "group": "未知",
+              "difference": 747.66,
+              "contribution": -0.004889707553422929
+            },
+            {
+              "group": "数码",
+              "difference": 64805.78,
+              "contribution": -0.4238307679579817
+            }
+          ],
+          "rank_changed": false,
+          "raw_tied_sources": [
+            "服饰"
+          ],
+          "clean_tied_sources": [
+            "服饰"
+          ]
+        }
+      },
+      "unknown_category": {
+        "rows": 8,
+        "control_net_sales": 272.71,
+        "analysis_net_sales": 1020.37,
+        "difference": 747.66,
+        "note": "未匹配商品金额保留为未知品类；已知品类排名不证明未知记录真实所属品类。"
+      },
+      "note": "仅比较本次输入按既定规则清洗前后的账面汇总。原始行含重复/冲突，不是真实交易基准；来源未变不代表对其他异常普遍稳健。"
+    }
+  },
+  "availability": {
+    "full": true,
+    "metrics": {
+      "net_sales": true,
+      "order_count": true,
+      "pre_refund_sales": true,
+      "refund_amount": true,
+      "quantity": true,
+      "channel": true,
+      "category": true,
+      "traffic": true,
+      "aov": true,
+      "refund_rate": true
+    },
+    "reasons": []
+  },
+  "by_channel": {
+    "App": {
+      "control_net_sales": 525128.99,
+      "analysis_net_sales": 471114.4,
+      "difference": -54014.59,
+      "decrease_amount": 54014.59,
+      "contribution": 0.35325622437744775,
+      "control": {
+        "net_sales": 525128.99,
+        "order_count": 1496,
+        "aov": 351.02205213903744,
+        "refund_rate": 0.02858699008858257,
+        "pre_refund_sales": 540582.62,
+        "refund_amount": 15453.63,
+        "quantity": 2162
+      },
+      "analysis": {
+        "net_sales": 471114.4,
+        "order_count": 1509,
+        "aov": 312.2030483764082,
+        "refund_rate": 0.030791537881705463,
+        "pre_refund_sales": 486081.6,
+        "refund_amount": 14967.2,
+        "quantity": 2067
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -54501.02,
+          "refund_change": -486.43,
+          "refund_effect": 486.43,
+          "net_change": -54014.59,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": 4310.963153350397,
+          "aov_effect": -58325.553153350396,
+          "net_change": -54014.59,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "搜索": {
+      "control_net_sales": 402570.35,
+      "analysis_net_sales": 381279.85,
+      "difference": -21290.5,
+      "decrease_amount": 21290.5,
+      "contribution": 0.13924018760686793,
+      "control": {
+        "net_sales": 402570.35,
+        "order_count": 1248,
+        "aov": 322.5723958333333,
+        "refund_rate": 0.02623700834106604,
+        "pre_refund_sales": 413417.18,
+        "refund_amount": 10846.83,
+        "quantity": 1816
+      },
+      "analysis": {
+        "net_sales": 381279.85,
+        "order_count": 1194,
+        "aov": 319.3298576214405,
+        "refund_rate": 0.021201641295161656,
+        "pre_refund_sales": 389538.71,
+        "refund_amount": 8258.86,
+        "quantity": 1687
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -23878.47,
+          "refund_change": -2587.97,
+          "refund_effect": 2587.97,
+          "net_change": -21290.5,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": -17331.360843278893,
+          "aov_effect": -3959.1391567211053,
+          "net_change": -21290.5,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "网页": {
+      "control_net_sales": 335401.61,
+      "analysis_net_sales": 296335.38,
+      "difference": -39066.23,
+      "decrease_amount": 39066.23,
+      "contribution": 0.25549372698119127,
+      "control": {
+        "net_sales": 335401.61,
+        "order_count": 964,
+        "aov": 347.92698132780083,
+        "refund_rate": 0.03151071879173775,
+        "pre_refund_sales": 346314.22,
+        "refund_amount": 10912.61,
+        "quantity": 1384
+      },
+      "analysis": {
+        "net_sales": 296335.38,
+        "order_count": 955,
+        "aov": 310.2988272251309,
+        "refund_rate": 0.0323151181682028,
+        "pre_refund_sales": 306231.28,
+        "refund_amount": 9895.9,
+        "quantity": 1333
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -40082.94,
+          "refund_change": -1016.71,
+          "refund_effect": 1016.71,
+          "net_change": -39066.23,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": -2962.0161384881926,
+          "aov_effect": -36104.21386151181,
+          "net_change": -39066.23,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "联盟": {
+      "control_net_sales": 245279.04,
+      "analysis_net_sales": 206745.51,
+      "difference": -38533.53,
+      "decrease_amount": 38533.53,
+      "contribution": 0.252009861034493,
+      "control": {
+        "net_sales": 245279.04,
+        "order_count": 730,
+        "aov": 335.9986849315069,
+        "refund_rate": 0.023537853880833175,
+        "pre_refund_sales": 251191.55,
+        "refund_amount": 5912.51,
+        "quantity": 1035
+      },
+      "analysis": {
+        "net_sales": 206745.51,
+        "order_count": 694,
+        "aov": 297.9041930835735,
+        "refund_rate": 0.029477713883347023,
+        "pre_refund_sales": 213025.0,
+        "refund_amount": 6279.49,
+        "quantity": 971
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -38166.55,
+          "refund_change": 366.98,
+          "refund_effect": -366.98,
+          "net_change": -38533.53,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": -11410.251804271446,
+          "aov_effect": -27123.278195728555,
+          "net_change": -38533.53,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    }
+  },
+  "by_category": {
+    "家居": {
+      "control_net_sales": 310784.8,
+      "analysis_net_sales": 290987.66,
+      "difference": -19797.14,
+      "decrease_amount": 19797.14,
+      "contribution": 0.1294735909292609,
+      "control": {
+        "net_sales": 310784.8,
+        "order_count": 1005,
+        "aov": 309.23860696517414,
+        "refund_rate": 0.023436808950733655,
+        "pre_refund_sales": 318243.41,
+        "refund_amount": 7458.61,
+        "quantity": 1221
+      },
+      "analysis": {
+        "net_sales": 290987.66,
+        "order_count": 966,
+        "aov": 301.2294616977225,
+        "refund_rate": 0.02300730700655009,
+        "pre_refund_sales": 297840.16,
+        "refund_amount": 6852.5,
+        "quantity": 1171
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -20403.25,
+          "refund_change": -606.11,
+          "refund_effect": 606.11,
+          "net_change": -19797.14,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": -11904.127338926486,
+          "aov_effect": -7893.012661073514,
+          "net_change": -19797.14,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "数码": {
+      "control_net_sales": 659580.4,
+      "analysis_net_sales": 724386.18,
+      "difference": 64805.78,
+      "decrease_amount": -64805.78,
+      "contribution": -0.4238307679579817,
+      "control": {
+        "net_sales": 659580.4,
+        "order_count": 989,
+        "aov": 666.9164812942366,
+        "refund_rate": 0.030423270156682142,
+        "pre_refund_sales": 680276.64,
+        "refund_amount": 20696.24,
+        "quantity": 1203
+      },
+      "analysis": {
+        "net_sales": 724386.18,
+        "order_count": 1073,
+        "aov": 675.103616029823,
+        "refund_rate": 0.02991576430751223,
+        "pre_refund_sales": 746725.03,
+        "refund_amount": 22338.85,
+        "quantity": 1287
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": 66448.39,
+          "refund_change": 1642.61,
+          "refund_effect": -1642.61,
+          "net_change": 64805.78,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": 56364.8440876105,
+          "aov_effect": 8440.9359123895,
+          "net_change": 64805.78,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "服饰": {
+      "control_net_sales": 258732.37,
+      "analysis_net_sales": 71296.43,
+      "difference": -187435.94,
+      "decrease_amount": 187435.94,
+      "contribution": 1.2258338437269976,
+      "control": {
+        "net_sales": 258732.37,
+        "order_count": 1193,
+        "aov": 216.87541492036883,
+        "refund_rate": 0.03338423340203902,
+        "pre_refund_sales": 267668.27,
+        "refund_amount": 8935.9,
+        "quantity": 1470
+      },
+      "analysis": {
+        "net_sales": 71296.43,
+        "order_count": 1108,
+        "aov": 64.3469584837545,
+        "refund_rate": 0.03071654027057822,
+        "pre_refund_sales": 73555.81,
+        "refund_amount": 2259.38,
+        "quantity": 1162
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -194112.46,
+          "refund_change": -6676.52,
+          "refund_effect": 6676.52,
+          "net_change": -187435.94,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": -11951.950869675242,
+          "aov_effect": -175483.98913032477,
+          "net_change": -187435.94,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "未知": {
+      "control_net_sales": 272.71,
+      "analysis_net_sales": 1020.37,
+      "difference": 747.66,
+      "decrease_amount": -747.66,
+      "contribution": -0.004889707553422929,
+      "control": {
+        "net_sales": 272.71,
+        "order_count": 3,
+        "aov": 90.90333333333332,
+        "refund_rate": 0.0,
+        "pre_refund_sales": 272.71,
+        "refund_amount": 0.0,
+        "quantity": 3
+      },
+      "analysis": {
+        "net_sales": 1020.37,
+        "order_count": 5,
+        "aov": 204.074,
+        "refund_rate": 0.25243237698912757,
+        "pre_refund_sales": 1364.92,
+        "refund_amount": 344.55,
+        "quantity": 6
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": 1092.21,
+          "refund_change": 344.55,
+          "refund_effect": -344.55,
+          "net_change": 747.66,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": 294.9773333333333,
+          "aov_effect": 452.68266666666665,
+          "net_change": 747.66,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "美妆": {
+      "control_net_sales": 165252.25,
+      "analysis_net_sales": 157540.81,
+      "difference": -7711.44,
+      "decrease_amount": 7711.44,
+      "contribution": 0.05043293263751934,
+      "control": {
+        "net_sales": 165252.25,
+        "order_count": 935,
+        "aov": 176.7403743315508,
+        "refund_rate": 0.016707298961181026,
+        "pre_refund_sales": 168060.08,
+        "refund_amount": 2807.83,
+        "quantity": 1136
+      },
+      "analysis": {
+        "net_sales": 157540.81,
+        "order_count": 913,
+        "aov": 172.5529134720701,
+        "refund_rate": 0.028347390481023544,
+        "pre_refund_sales": 162136.97,
+        "refund_amount": 4596.16,
+        "quantity": 1110
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -5923.11,
+          "refund_change": 1788.33,
+          "refund_effect": -1788.33,
+          "net_change": -7711.44,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": -3842.2261658398297,
+          "aov_effect": -3869.21383416017,
+          "net_change": -7711.44,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    },
+    "食品": {
+      "control_net_sales": 113757.46,
+      "analysis_net_sales": 110243.69,
+      "difference": -3513.77,
+      "decrease_amount": 3513.77,
+      "contribution": 0.022980108217626843,
+      "control": {
+        "net_sales": 113757.46,
+        "order_count": 1093,
+        "aov": 104.07818847209516,
+        "refund_rate": 0.027584860416503182,
+        "pre_refund_sales": 116984.46,
+        "refund_amount": 3227.0,
+        "quantity": 1364
+      },
+      "analysis": {
+        "net_sales": 110243.69,
+        "order_count": 1079,
+        "aov": 102.17209453197405,
+        "refund_rate": 0.026577586427639896,
+        "pre_refund_sales": 113253.7,
+        "refund_amount": 3010.01,
+        "quantity": 1322
+      },
+      "decomposition": {
+        "refund_bridge": {
+          "available": true,
+          "pre_refund_change": -3730.76,
+          "refund_change": -216.99,
+          "refund_effect": 216.99,
+          "net_change": -3513.77,
+          "reconciles": true,
+          "reason": null
+        },
+        "order_aov": {
+          "available": true,
+          "order_effect": -1443.7519810284844,
+          "aov_effect": -2070.0180189715156,
+          "net_change": -3513.77,
+          "reconciles": true,
+          "reason": null,
+          "note": "订单量与净客单价的对称数学分解；净客单价已扣退款，不能再与退款金额项相加，不表示因果效应。"
+        }
+      }
+    }
+  },
+  "traffic_by_channel": {
+    "App": {
+      "control_visits": 19953,
+      "analysis_visits": 19759,
+      "difference": -194
+    },
+    "搜索": {
+      "control_visits": 17025,
+      "analysis_visits": 16742,
+      "difference": -283
+    },
+    "网页": {
+      "control_visits": 14411,
+      "analysis_visits": 14113,
+      "difference": -298
+    },
+    "联盟": {
+      "control_visits": 11574,
+      "analysis_visits": 11438,
+      "difference": -136
+    }
+  },
+  "top_decline_source": {
+    "channel": "App",
+    "category": "服饰"
+  }
+}

@@ -81,7 +81,7 @@ def test_plan_cycle_and_finish_gate(tmp_path,config):
     with pytest.raises(ValueError,match="依赖"):
         tools["update_plan"].invoke({"tasks":[{"id":"a","objective":"x","depends_on":["b"]},{"id":"b","objective":"y","depends_on":["a"]}],"reason":"test"})
     with pytest.raises(ValueError,match="必做"):
-        tools["finish"].invoke({"task_id":"finish","findings":[{"statement":"done","evidence_ids":["invented"]}]})
+        tools["finish"].invoke({"task_id":"finish","findings":[{"kind":"metric_comparison","scope":"overall","metric":"net_sales","evidence_ids":["invented"]}]})
 
 def test_missing_score_does_not_shrink_denominator():
     ref=json.loads((ROOT/"evaluation/references/public_reference_answers.json").read_text(encoding="utf-8"))["case_01"]

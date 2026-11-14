@@ -1,0 +1,1 @@
+SELECT t.period, SUM(t.visitors) AS visits, SUM(d.order_count) AS order_count, SUM(d.net_cents)/100.0 AS net_sales, SUM(d.order_count)*1.0/NULLIF(SUM(t.visitors),0) AS orders_per_visit FROM traffic t JOIN daily_channel d ON t.date = d.date AND t.channel = d.channel WHERE t.period IN ('control','analysis') AND t.channel = 'App' GROUP BY t.period ORDER BY t.period;

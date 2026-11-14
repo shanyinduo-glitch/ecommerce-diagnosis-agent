@@ -1,0 +1,258 @@
+[
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "overall",
+      "group": null,
+      "metric": "net_sales",
+      "evidence_ids": [
+        "metrics"
+      ]
+    },
+    "statement": "总体净销售额由 1,691,292.44 元 变为 1,538,405.57 元，减少 152,886.87 元。",
+    "evidence_ids": [
+      "metrics"
+    ],
+    "metric_paths": [
+      "overall.control.net_sales",
+      "overall.analysis.net_sales"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "overall",
+      "group": null,
+      "metric": "order_count",
+      "evidence_ids": [
+        "metrics"
+      ]
+    },
+    "statement": "总体订单量由 4,466 单 变为 3,947 单，减少 519 单。",
+    "evidence_ids": [
+      "metrics"
+    ],
+    "metric_paths": [
+      "overall.control.order_count",
+      "overall.analysis.order_count"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "overall",
+      "group": null,
+      "metric": "aov",
+      "evidence_ids": [
+        "metrics"
+      ]
+    },
+    "statement": "总体净客单价由 378.70 元 变为 389.77 元，增加 11.06 元。",
+    "evidence_ids": [
+      "metrics"
+    ],
+    "metric_paths": [
+      "overall.control.aov",
+      "overall.analysis.aov"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "overall",
+      "group": null,
+      "metric": "refund_rate",
+      "evidence_ids": [
+        "metrics"
+      ]
+    },
+    "statement": "总体金额退款率由 2.58% 变为 2.67%，变化 +0.09 个百分点。",
+    "evidence_ids": [
+      "metrics"
+    ],
+    "metric_paths": [
+      "overall.control.refund_rate",
+      "overall.analysis.refund_rate"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "accounting_bridge",
+      "scope": "overall",
+      "group": null,
+      "metric": "net_sales",
+      "evidence_ids": [
+        "metrics"
+      ]
+    },
+    "statement": "总体退款前销售额变化为 -155,441.99 元，退款金额变化为 -2,555.12 元；按净销售额定义，前者减后者等于净销售额变化 -152,886.87 元。这是账面恒等关系，不能说明退款变化的业务原因。",
+    "evidence_ids": [
+      "metrics"
+    ],
+    "metric_paths": [
+      "overall.control.pre_refund_sales",
+      "overall.control.refund_amount",
+      "overall.control.net_sales",
+      "overall.analysis.pre_refund_sales",
+      "overall.analysis.refund_amount",
+      "overall.analysis.net_sales"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "decline_source",
+      "scope": "channel",
+      "group": "搜索",
+      "metric": "net_sales",
+      "evidence_ids": [
+        "metrics",
+        "sql_001"
+      ]
+    },
+    "statement": "搜索渠道净销售额减少 186,408.28 元，占总体净销售额减少额的 121.93%，为最大下降渠道。",
+    "evidence_ids": [
+      "metrics",
+      "sql_001"
+    ],
+    "metric_paths": [
+      "by_channel.搜索.difference",
+      "by_channel.搜索.contribution",
+      "overall.difference"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "channel",
+      "group": "搜索",
+      "metric": "order_count",
+      "evidence_ids": [
+        "metrics",
+        "sql_001"
+      ]
+    },
+    "statement": "搜索渠道订单量由 1,236 单 变为 706 单，减少 530 单。",
+    "evidence_ids": [
+      "metrics",
+      "sql_001"
+    ],
+    "metric_paths": [
+      "by_channel.搜索.control.order_count",
+      "by_channel.搜索.analysis.order_count"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "channel",
+      "group": "搜索",
+      "metric": "aov",
+      "evidence_ids": [
+        "metrics",
+        "sql_001"
+      ]
+    },
+    "statement": "搜索渠道净客单价由 377.30 元 变为 396.50 元，增加 19.21 元。",
+    "evidence_ids": [
+      "metrics",
+      "sql_001"
+    ],
+    "metric_paths": [
+      "by_channel.搜索.control.aov",
+      "by_channel.搜索.analysis.aov"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "channel",
+      "group": "联盟",
+      "metric": "net_sales",
+      "evidence_ids": [
+        "metrics"
+      ]
+    },
+    "statement": "联盟渠道净销售额由 247,021.78 元 变为 290,141.71 元，增加 43,119.93 元。",
+    "evidence_ids": [
+      "metrics"
+    ],
+    "metric_paths": [
+      "by_channel.联盟.control.net_sales",
+      "by_channel.联盟.analysis.net_sales"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "decline_source",
+      "scope": "category",
+      "group": "家居",
+      "metric": "net_sales",
+      "evidence_ids": [
+        "metrics",
+        "sql_002"
+      ]
+    },
+    "statement": "家居品类净销售额减少 52,718.58 元，占总体净销售额减少额的 34.48%，为最大下降品类。",
+    "evidence_ids": [
+      "metrics",
+      "sql_002"
+    ],
+    "metric_paths": [
+      "by_category.家居.difference",
+      "by_category.家居.contribution",
+      "overall.difference"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "category",
+      "group": "家居",
+      "metric": "refund_rate",
+      "evidence_ids": [
+        "metrics",
+        "sql_002"
+      ]
+    },
+    "statement": "家居品类金额退款率由 1.70% 变为 2.60%，变化 +0.90 个百分点。",
+    "evidence_ids": [
+      "metrics",
+      "sql_002"
+    ],
+    "metric_paths": [
+      "by_category.家居.control.refund_rate",
+      "by_category.家居.analysis.refund_rate"
+    ],
+    "verification": "typed_metric_check"
+  },
+  {
+    "claim": {
+      "kind": "metric_comparison",
+      "scope": "category",
+      "group": "服饰",
+      "metric": "net_sales",
+      "evidence_ids": [
+        "metrics"
+      ]
+    },
+    "statement": "服饰品类净销售额由 311,278.96 元 变为 268,719.91 元，减少 42,559.05 元。",
+    "evidence_ids": [
+      "metrics"
+    ],
+    "metric_paths": [
+      "by_category.服饰.control.net_sales",
+      "by_category.服饰.analysis.net_sales"
+    ],
+    "verification": "typed_metric_check"
+  }
+]
